@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Jacquard+12+Charted&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Esteban&family=Jacquard+12+Charted&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h3{
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-family: "Cabin", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+      font-family: "Cabin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  background-color: #1A4D2E;
+}
+
+.introduction{
+  background-color: #F5EFE6;
+}
+
+.acad-stress{
+  background-color: #4F6F52;
+  
+}
+
+.time-management{
+  background-color: #F5EFE6;
+}
+
+.financial-struggle{
+  background-color: #4F6F52;
+}
+
+.peer-pressure{
+  background-color: #F5EFE6;
+}
+
+.sleep-deprivation{
+  background-color: #4F6F52;
+}
+
+footer{
+  background-color: #1A4D2E;
+}
