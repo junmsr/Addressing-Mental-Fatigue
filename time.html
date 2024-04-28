@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Time Management</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="In the dynamic landscape of college life, mastering the art of time management stands as a crucial pillar of success. Yet, amidst the whirlwind of academic pursuits, extracurricular activities, and social engagements, many students find themselves grappling with the elusive task of balancing their time effectively.">
+    
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F5EFE6;
+        color: #1A4D2E;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    header {
+        background-color: #382315;
+        padding: 20px;
+        text-align: right;
+
+    }
+
+    nav a {
+        color: #E8DFCA;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .introduction {
+        background-color: #E8DFCA;
+        text-align: justify;
+    }
+
+    .time-management-causes,
+    .consequences,
+    .prevention 
+    .summary {
+        margin-top: 20px;
+        background-color: #F5EFE6;
+    }
+
+    .summary p{
+        text-align: justify;
+    }
+
+    .vidpost {
+        margin-top: 20px;
+        background-color: #AB8E73;
+        position: relative;
+    }
+
+    .item{
+        text-align: justify;
+        padding-left: 30px;
+    }
+
+    .item p{
+        padding-left: 20px;
+    }
+
+    h3 {
+        color: #1A4D2E;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1A4D2E;
+    }
+
+    h2 {
+        text-align: center;
+        color: #1A4D2E;
+    }
+
+    a {
+        color: #1A4D2E;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #382315;
+        padding: 3px;
+        text-align: center;
+        color: #E8DFCA;
+    }
+
+    .vidpost iframe {
+        width: 30%;
+        height: 300px;
+        border: none;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    .vidpost h3{
+        text-align: center;
+    }
+
+    *{
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 250px;
+        height: 360px;
+        padding: 2rem 1rem;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover{
+        transform: translateY(20px);
+    }
+
+    .card:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left:0;
+        display: block;
+        width:100%;
+        height:100%;
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+        background:#E8DFCA;
+    }
+
+    .card:hover:before{
+        opacity: 1;
+    }
+
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .card .info{
+        position: relative;
+        z-index: 3;
+        color: black;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s all;
+    }
+
+    .card:hover .info{
+        opacity: 1;
+        transform: translateY(opx);
+    }
+
+    .card .info p{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .line{
+        display: block;
+        width: 1300px;
+        align-items: center;
+        border: 2px solid #1A4D2E;
+        margin-top: 50px;
+    }
+
+    </style>
 </head>
+
 <body>
+
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -15,59 +208,127 @@
     </header>
 
     <section class="introduction">
-        <br>
-        <h1>Time Management</h1>
-        <p>In the dynamic landscape of college life, mastering the art of time management stands as a crucial pillar of success. Yet, amidst the whirlwind of academic pursuits, extracurricular activities, and social engagements, many students find themselves grappling with the elusive task of balancing their time effectively. This challenge is not merely a matter of scheduling classes and study sessions; it encompasses a myriad of factors, from procrastination to overcommitment, each presenting its own set of hurdles to overcome. In this discourse, we delve into the causes and consequences of time management problems among college students, as well as explore proactive strategies to prevent and address these issues. Through understanding the root causes, recognizing the potential consequences, and implementing targeted prevention methods, students can navigate the complexities of college life with greater ease and emerge empowered to achieve their academic and personal goals</p>
+        <h1><b>Time Management</b></h1>
+        <p>&nbsp;&nbsp;&nbsp;Navigating the labyrinth of college life requires more than just academic prowess; it demands adept time management skills. This concise exploration delves into the challenges faced by college students in managing their time effectively. From the insidious grip of procrastination to the weight of overcommitment, students grapple with myriad obstacles that threaten their academic success and well-being. However, armed with insights into the causes and consequences of time management problems, as well as actionable prevention strategies, students can chart a course towards academic achievement and personal fulfillment. This succinct examination serves as a roadmap for students seeking to harness their time wisely and thrive amidst the bustling landscape of higher education.</p>
     </section>
 
-    <section class="causes-time-management">
-        <h3>Causes</h3>
-        <ol>
-            <li><span class="bold-title">Poor Planning Skills: </span>Many students haven't developed effective planning habits, leading to disorganized schedules.</li>
-            <li><span class="bold-title">Procrastination: </span>Putting off tasks until the last minute can be a result of fear of failure, lack of motivation, or difficulty managing time.</li>
-            <li><span class="bold-title">Overcommitment: </span>Taking on too many activities or responsibilities can leave students with little time for academics.</li>
-            <li><span class="bold-title">Distractions: </span>Social media, smartphones, and other distractions can consume valuable study time.</li>
-            <li><span class="bold-title">Lack of Prioritization: </span>Students may struggle to identify which tasks are most important and end up spending too much time on less important activities.</li>
-        </ol><br>
+    <section class="time-management-causes">
+        <h2>Causes of Time Management on College Students</h2>
+        <p>There are several causes of time management on students, including the following:</p>
+
+        <div class="wrapper">
+            <div class="card">
+                <img src="images/poorplanning.jpg">
+                <div class="info">
+                    <h3>Poor Planning Skills</h3>
+                    <p>Many students haven't developed effective planning habits, leading to disorganized schedules.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/procrastination.jpg">
+                <div class="info">
+                    <h3>Procrastination</h3>
+                    <p>Putting off tasks until the last minute can be a result of fear of failure, lack of motivation, or difficulty managing time.</p>        
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/overcommitment.jpg">
+                <div class="info">
+                    <h3>Overcommitment</h3>
+                    <p>Taking on too many activities or responsibilities can leave students with little time for academics.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/distraction.jpg">
+                <div class="info">
+                    <h3>Distractions</h3>
+                    <p>Social media, smartphones, and other distractions can consume valuable study time.</p>        
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/lackPriority.jpg">
+                <div class="info">
+                    <h3>Lack of Prioritization</h3>
+                    <p>Students may struggle to identify which tasks are most important and end up spending too much time on less important activities.</p>        
+                </div>
+            </div>
+        </div>
+        
     </section>
 
+    <hr class="line">
     <section class="consequences">
-        <h3>Consequences</h3>
-        <ol>
-            <li><span class="bold-title">Stress and Anxiety: </span>Poor time management can lead to feeling overwhelmed by deadlines and responsibilities.</li>
-            <li><span class="bold-title">Poor Academic Performance: </span>Missed deadlines, rushed assignments, and lack of preparation can result in lower grades.</li>
-            <li><span class="bold-title">Decreased Well-being: </span>Constantly feeling rushed and stressed can negatively impact mental and physical health.</li>
-            <li><span class="bold-title">Strained Relationships: </span>Overcommitment and lack of time for socializing can strain relationships with friends and family.</li>
-        </ol><br>
+        <h2>Consequences of Lacking Time Management </h2>
+        <p>The following consequences would encounter of College Students lacking of time management;</p>
+
+        <div class="item">
+            <ul>
+                <li><h3>Stress and Anxiety</h3></li>
+                <p>Poor time management can lead to feeling overwhelmed by deadlines and responsibilities.</p>
+
+                <li><h3>Poor Academic Performance</h3></li>
+                <p>Missed deadlines, rushed assignments, and lack of preparation can result in lower grades.</p>
+
+                <li><h3>Decreased Well-being</h3></li>
+                <p>Constantly feeling rushed and stressed can negatively impact mental and physical health.</p>
+
+                <li><h3>Strained Relationships</h3></li>
+                <p>Overcommitment and lack of time for socializing can strain relationships with friends and family.</p>
+            </ul>
+        </div>
     </section>
 
+
+    <hr class="line">
     <section class="prevention">
-        <h3>Prevention Strategies</h3>
-        <ol>
-            <li><span class="bold-title">Develop Planning Skills: </span>Teach students how to use planners, calendars, or digital tools to schedule their time effectively.</li>
-            <li><span class="bold-title">Procrastination Awareness: </span>Help students recognize the signs of procrastination and provide strategies to overcome it, such as breaking tasks into smaller steps or setting deadlines.</li>
-            <li><span class="bold-title">Encourage Balance: </span>Help students understand the importance of balance and prioritize their commitments to avoid overcommitment.</li>
-            <li><span class="bold-title">Limit Distractions: </span>Teach students techniques to limit distractions, such as turning off notifications or using website blockers during study sessions.</li>
-            <li><span class="bold-title">Time Management Workshops: </span>Offer workshops or resources on time management techniques and study skills.</li>
-            <li><span class="bold-title">Provide Support: </span>Offer academic support services, such as tutoring or counseling, for students struggling with time management issues.</li>
-        </ol><br>
+        <h2>Prevention Strategies for Time Management</h2>
+        <p>College students commonly use various strategies to cope with time management. These include:</p>
+
+        <div class="item">
+            <h3>1. Develop Planning Skills</h3>
+            <p>Teach students how to use planners, calendars, or digital tools to schedule their time effectively.</p>
+
+            <h3>2. Procrastination Awareness</h3>
+            <p>Help students recognize the signs of procrastination and provide strategies to overcome it, such as breaking tasks into smaller steps or setting deadlines.</p>
+
+            <h3>3. Encourage Balance</h3>
+            <p>Help students understand the importance of balance and prioritize their commitments to avoid overcommitment.</p>
+
+            <h3>4. Limit Distractions</h3>
+            <p>Teach students techniques to limit distractions, such as turning off notifications or using website blockers during study sessions.</p>
+
+            <h3>5. Time Management Workshops</h3>
+            <p>Offer workshops or resources on time management techniques and study skills.</p>
+
+            <h3>6. Provide Support</h3>
+            <p>Offer academic support services, such as tutoring or counseling, for students struggling with time management issues.</p>
+        </div>
     </section>
 
+    <hr class="line">
     <section class="summary">
-        <h3>Summary</h3>
+        <h2>Summary</h2>
         <p>This discussion talks about why it's hard for college students to manage their time well. It's because of things like putting off tasks, doing too much, getting distracted, and not knowing what's most important. But if students understand why these problems happen and what could go wrong if they don't manage their time well, they can do things to stop them from happening. Like making plans, being aware of when they're avoiding tasks, finding a balance, avoiding distractions, and getting help if they need it. By learning how to manage time better, students can do well in their studies and stay healthy and happy too.</p>
     </section>
 
+    <hr class="line">
     <section class="vidpost">
-        <h4>Related Post</h4>
+        <h3>Related Post</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2g_o-hRBeMA?si=ifgpvS08bL0Lqd2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HxjnKL4Hhqo?si=DQd967NSUDhQoQoy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SWpOCLP1hjw?si=iRF-CqYeC9X7Cpuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <footer>
         <div class="bottom-bar">
-          <p>&copy; 2024 All rights reserved.</p>
-       </div>
+            <p>&copy; 2024 All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>

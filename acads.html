@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Academic Stress</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Academic stress on college students is a significant challenge that many young adults face during their higher education journey. It refers to the stress and expectations placed on students to excel academically in their courses, exams, and assignments. This stress can come from various sources, including parents, peers, professors, and even self-imposed standards. Coping with academic stress is essential for students to maintain their mental and physical well-being while striving for success in their studies. Understanding the causes and effects of academic stress can help students develop effective strategies to manage it and thrive in their college experience.">
-    <title>Academic Stress</title>
+    
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F5EFE6;
+        color: #1A4D2E;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    header {
+        background-color: #382315;
+        padding: 20px;
+        text-align: right;
+
+    }
+
+    nav a {
+        color: #E8DFCA;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .introduction {
+        background-color: #E8DFCA;
+        text-align: justify;
+    }
+
+    .academic-stress-causes,
+    .solution,
+    .prevention {
+        margin-top: 20px;
+        background-color: #F5EFE6;
+    }
+
+    .vidpost {
+        margin-top: 20px;
+        background-color: #AB8E73;
+        position: relative;
+    }
+
+    .item{
+        text-align: justify;
+        padding-left: 30px;
+    }
+
+    .item p{
+        padding-left: 20px;
+    }
+
+    h3 {
+        color: #1A4D2E;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1A4D2E;
+    }
+
+    h2 {
+        text-align: center;
+        color: #1A4D2E;
+    }
+
+    a {
+        color: #1A4D2E;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #382315;
+        padding: 3px;
+        text-align: center;
+        color: #E8DFCA;
+    }
+
+    .vidpost iframe {
+        width: 30%;
+        height: 300px;
+        border: none;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    .vidpost h3{
+        text-align: center;
+    }
+
+    *{
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 280px;
+        height: 360px;
+        padding: 2rem 1rem;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover{
+        transform: translateY(20px);
+    }
+
+    .card:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left:0;
+        display: block;
+        width:100%;
+        height:100%;
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+        background:#E8DFCA;
+    }
+
+    .card:hover:before{
+        opacity: 1;
+    }
+
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .card .info{
+        position: relative;
+        z-index: 3;
+        color: black;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s all;
+    }
+
+    .card:hover .info{
+        opacity: 1;
+        transform: translateY(opx);
+    }
+
+    .card .info p{
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .line{
+        display: block;
+        width: 1300px;
+        align-items: center;
+        border: 2px solid #1A4D2E;
+        margin-top: 50px;
+    }
+
+    </style>
 </head>
+
 <body>
+
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -15,87 +203,118 @@
     </header>
 
     <section class="introduction">
-      <br>
-        <h1>Academic Stress</h1>
-        <p>Academic stress on college students is a significant challenge that many young adults face during their higher education journey. It refers to the stress and expectations placed on students to excel academically in their courses, exams, and assignments. This stress can come from various sources, including parents, peers, professors, and even self-imposed standards. Coping with academic stress is essential for students to maintain their mental and physical well-being while striving for success in their studies. Understanding the causes and effects of academic stress can help students develop effective strategies to manage it and thrive in their college experience.</p>
+        <h1><b>Academic Stress</b></h1>
+        <p>&nbsp;&nbsp;&nbsp;Academic stress on college students is a significant challenge that many young adults face during their higher education journey. It refers to the stress and expectations placed on students to excel academically in their courses, exams, and assignments.</p>
+        <p>&nbsp;&nbsp;&nbsp;This stress can come from various sources, including parents, peers, professors, and even self-imposed standards. Coping with academic stress is essential for students to maintain their mental and physical well-being while striving for success in their studies. Understanding the causes and effects of academic stress can help students develop effective strategies to manage it and thrive in their college experience.</p>
     </section>
 
-    <section class="acadsCause">
-      <br>
-        <h2>Causes of Academic Stress on College Students </h2>
+    <section class="academic-stress-causes">
+        <h2>Causes of Academic Stress on College Students</h2>
+        <p>There are several causes of academic stress on students, including the following:</p>
 
-        <h3>Stress from Parents or Family</h3>
-          <p>College students often experience academic stress due to expectations from their parents or family. These expectations may include achieving high grades, pursuing specific career paths, or maintaining a certain level of academic excellence. The desire to meet family expectations can create stress and a sense of responsibility, contributing to academic stress.</p>
+        <div class="wrapper">
+            <div class="card">
+                <img src="images/stressFamily.jpg">
+                <div class="info">
+                    <h3>Stress from Parents or Family</h3>
+                    <p>College students often experience academic stress due to expectations from their parents or family. These expectations may include achieving high grades, pursuing specific career paths, or maintaining a certain level of academic excellence. The desire to meet family expectations can create stress and a sense of responsibility, contributing to academic stress.</p>
+                </div>
+            </div>
 
-        <h3>Stress from the Self</h3>
-        <p>Internal stress, driven by personal ambitions and the desire for success, is another significant cause of academic stress. Students set high standards for themselves, aiming for perfection or fearing failure. This self-imposed pressure can lead to stress, anxiety, and an intense focus on academic performance. </p>
+            <div class="card">
+                <img src="images/stressSelf.jpg">
+                <div class="info">
+                    <h3>Stress from the Self</h3>
+                    <p>Internal pressure, driven by personal ambitions and the desire for success, is another significant cause of pressure. Students set high standards for themselves, aiming for perfection or fearing failure. This self-imposed pressure can lead to stress, anxiety, and an intense focus on academic performance.</p>        
+                </div>
+            </div>
 
-        <h3>Stress from Academic Grades</h3>
-        <p>The grading system in college often becomes a source of stress for students. The constant evaluation and the importance placed on grades can lead to a fear of failure or a constant drive to maintain a high GPA. The stress to perform well in exams and assignments can be overwhelming, impacting a student's overall well-being.</p>
+            <div class="card">
+                <img src="images/stressGrades.jpg">
+                <div class="info">
+                    <h3>Stress from Academic Grades</h3>
+                    <p>The grading system in college often becomes a source of stress for students. The constant evaluation and the importance placed on grades can lead to a fear of failure or a constant drive to maintain a high GPA. The stress to perform well in exams and assignments can be overwhelming, impacting a student's overall well-being.</p>
+                </div>
+            </div>
 
-        <h3>Stress from Peer</h3>
-        <p>Peer stress in academics arises when students compare themselves to their peers or feel the need to meet certain academic standards set by their friends. This can create a competitive environment where students may feel stress to excel or keep up with their peers, potentially affecting their mental health and overall academic experience.</p>
-
-        <h3>Stress from Career and Future Concerns</h3>
-        <p>Many college students feel stress related to their future careers. Concerns about finding a job, pursuing a specific profession, or meeting societal expectations regarding success after graduation can contribute to academic stress. The fear of not being adequately prepared for the future can be a significant stressor for students.</p>
+            <div class="card">
+                <img src="images/stressCareer.jpg">
+                <div class="info">
+                    <h3>Stress from Career and Future Concerns</h3>
+                    <p>Many college students feel pressure related to their future careers. Concerns about finding a job, pursuing a specific profession, or meeting societal expectations regarding success after graduation can contribute to academic pressure. The fear of not being adequately prepared for the future can be a significant stressor for students.</p>        
+                </div>
+            </div>
+        </div>
+        
     </section>
 
-    <section class="acadsSolution">
-      <br>
-      <h2>The Way to Reduce Academic Stress</h2>
-      <p>Different people have different ways to reduce the stress. However, not all solutions can be helpful for everyone. The following solutions would provide help for College Students to reduce their stress.</p>
+    <hr class="line">
+    <section class="solution">
+        <h2>The Way to Reduce Academic Stress</h2>
+        <p>Different people have different ways to reduce stress. However, not all solutions can be helpful for everyone. The following solutions would provide help for College Students to reduce their pressure.</p>
 
-      <h3>Effective Time Management</h3>
-      <p>One great way to handle college stress is by planning your time wisely. Make a schedule that gives you enough time for each task, so you don't feel overwhelmed. Break big assignments into smaller parts and tackle them step by step. Good time management helps you stay organized and reduces last-minute panic.</p>
+        <div class="item">
+            <ul>
+                <li><h3>Effective Time Management</h3></li>
+                <p>One great way to handle college stress is by planning your time wisely. Make a schedule that gives you enough time for each task, so you don't feel overwhelmed. Break big assignments into smaller parts and tackle them step by step. Good time management helps you stay organized and reduces last-minute panic.</p>
 
-      <h3>Maintain a Healthy Work-Life Balance</h3>
-      <p>To make college less stressful, it's important to balance work with relaxation. Take regular breaks, exercise, and get enough sleep. This balance keeps you from burning out and helps you focus better when you're studying. By taking care of yourself, you create a more enjoyable college experience.</p>
+                <li><h3>Maintain a Healthy Work-Life Balance</h3></li>
+                <p>To make college less stressful, it's important to balance work with relaxation. Take regular breaks, exercise, and get enough sleep. This balance keeps you from burning out and helps you focus better when you're studying. By taking care of yourself, you create a more enjoyable college experience.</p>
 
-      <h3>Seek Support from Peers and Professionals</h3>
-      <p>Don't be afraid to ask for help when things get tough. Connect with classmates, join study groups, or talk to your professors. Sharing experiences and getting advice can make your academic journey smoother. Knowing you have support can make college feel more like a team effort.
-      </p>
+                <li><h3>Seek Support from Trusted Adults</h3></li>
+                <p><i>‘Seeking support from trusted adults is like having a safety net when facing peer pressure, ensuring you’re not alone in making choices.’</i></p>
+                <p>Last but not least, it is okay to turn to trusted adults for guidance if you’re feeling overwhelmed by peer pressure. Don’t hesitate to talk to someone about it. Parents, teachers, or mentors can offer valuable advice and support during challenging times.</p>
 
-      <h3>Think Positively and Keep Learning</h3>
-      <p>Instead of seeing challenges as roadblocks, see them as chances to learn and grow. Embrace the idea that you can get better at anything with effort. This positive mindset reduces the fear of making mistakes and makes your academic journey more enjoyable.</p>
+                <li><h3>Think Positively and Keep Learning</h3></li>
+                <p>Instead of seeing challenges as roadblocks, see them as chances to learn and grow. Embrace the idea that you can get better at anything with effort. This positive mindset reduces the fear of making mistakes and makes your academic journey more enjoyable.</p>
 
-      <h3>Know Your Limits and Say No</h3>
-      <p>Understanding what you can handle and saying no to too many commitments is crucial. While it's great to be involved, overloading yourself can lead to stress. Setting boundaries ensures you have time for studies and personal life. Prioritize what's important to make college more manageable and less overwhelming.</p>
+                <li><h3>Know Your Limits and Say No</h3></li>
+                <p>Understanding what you can handle and saying no to too many commitments is crucial. While it's great to be involved, overloading yourself can lead to stress. Setting boundaries ensures you have time for studies and personal life. Prioritize what's important to make college more manageable and less overwhelming.</p>
+            </ul>
+        </div>
     </section>
 
-    <section class="acadsPrevent">
-      <br>
-      <h2>Prevention for Academic Stress</h2>
-      <p>College students commonly use various strategies to cope with stress. These include:</p>
 
-      <h3>Early Planning and Organization: </h3>
-      <p>At the start of each semester, plan your schedule and break down tasks in advance. This helps you avoid last-minute stress and keeps things manageable.</p>
-      
-      <h3>Regular Check-ins</h3>
-      <p>Take time regularly to think about how you're doing with your work and how you're feeling. If you notice stress or worry, take small steps to address it before it becomes a big problem.</p>
-      
-      <h3>Setting Realistic Expectations</h3>
-      <p>When you begin a semester, set goals that you know you can achieve. Don't push yourself too hard; it's okay to challenge yourself, but being realistic prevents unnecessary stress.</p>
-      
-      <h3>Balancing Activities</h3>
-      <p>Make sure you have a balance between studying, spending time with friends, and doing other things you enjoy. Too much of one thing can lead to burnout.</p>
-      
-      <h3>Mindfulness and Stress Reduction</h3>
-      <p>Try simple activities like deep breathing or short moments of meditation to help manage stress. It can make a big difference in how you feel.</p>
+    <hr class="line">
+    <section class="prevention">
+        <h2>Prevention for Academic Stress</h2>
+        <p>College students commonly use various strategies to cope with stress. These include:</p>
 
-      <h3>Healthy Boundaries</h3>
-      <p>Know your limits and be okay with saying no when needed. Setting healthy boundaries means taking care of yourself first.</p>
-    </section><br>
+        <div class="item">
+            <h3>1. Early Planning and Organization</h3>
+            <p>At the start of each semester, plan your schedule and break down tasks in advance. This helps you avoid last-minute stress and keeps things manageable.</p>
 
+            <h3>2. Regular Check-ins</h3>
+            <p>Take time regularly to think about how you're doing with your work and how you're feeling. If you notice stress or worry, take small steps to address it before it becomes a big problem.</p>
+
+            <h3>3. Setting Realistic Expectations</h3>
+            <p>When you begin a semester, set goals that you know you can achieve. Don't push yourself too hard; it's okay to challenge yourself, but being realistic prevents unnecessary stress.</p>
+      
+            <h3>4. Balancing Activities</h3>
+            <p>Make sure you have a balance between studying, spending time with friends, and doing other things you enjoy. Too much of one thing can lead to burnout.</p>
+      
+            <h3>5. Mindfulness and Stress Reduction</h3>
+            <p>Try simple activities like deep breathing or short moments of meditation to help manage stress. It can make a big difference in how you feel.</p>
+
+            <h3>6. Healthy Boundaries</h3>
+            <p>Know your limits and be okay with saying no when needed. Setting healthy boundaries means taking care of yourself first.</p>
+        </div>
+    </section>
+
+    <hr class="line">
     <section class="vidpost">
-      <h3>Related Post</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dbic3JCX1jo?si=GFAxqROTysqEUW1H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
+        <h3>Related Post</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dbic3JCX1jo?si=GFAxqROTysqEUW1H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ytpjk4K7uKU?si=lpPdr6o7BcqDlr9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_2BFj-k__s0?si=DjDMdXSmUiabQ7nb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
 
     <footer>
-      <div class="bottom-bar">
-        <p>&copy; 2024 All rights reserved.</p>
-     </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>

@@ -5,6 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sleep deprivation among college students has become a widespread problem, with multiple reasons contributing to its prevalence. Students frequently sacrifice sleep in order to fulfill their duties due to the high academic workload, which is combined with extracurricular commitments and social activities.">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE6;
+            color: #1A4D2E;
+            margin: 0;
+            padding: 0;
+    
+        }
+    
+        header {
+            background-color: #382315;
+            padding: 20px;
+            text-align: right;
+    
+        }
+    
+        nav a {
+            color: #E8DFCA;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    
+        nav a:hover {
+            text-decoration: underline;
+        }
+    
+        section {
+            padding: 20px;
+        }
+    
+        .introduction {
+            background-color: #E8DFCA;
+            text-align: justify;
+        }
+    
+        .academic-stress-causes,
+        .solution,
+        .prevention {
+            margin-top: 20px;
+            background-color: #F5EFE6;
+        }
+    
+        .vidpost {
+            margin-top: 20px;
+            background-color: #AB8E73;
+            position: relative;
+        }
+    
+        .item{
+            text-align: justify;
+            padding-left: 30px;
+        }
+    
+        .item p{
+            padding-left: 20px;
+        }
+    
+        h3 {
+            color: #1A4D2E;
+        }
+    
+        h1 {
+            text-align: center;
+            color: #1A4D2E;
+        }
+    
+        h2 {
+            text-align: center;
+            color: #1A4D2E;
+        }
+    
+        a {
+            color: #1A4D2E;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        footer {
+            background-color: #382315;
+            padding: 3px;
+            text-align: center;
+            color: #E8DFCA;
+        }
+    
+        .vidpost iframe {
+            width: 30%;
+            height: 300px;
+            border: none;
+            margin-bottom: 50px;
+            margin-left: 20px;
+        }
+    
+        .vidpost h3{
+            text-align: center;
+        }
+    
+        *{
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+    
+        .wrapper{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    
+        .card{
+            width: 280px;
+            height: 360px;
+            padding: 2rem 1rem;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+            transition: 0.5s ease-in-out;
+        }
+    
+        .card:hover{
+            transform: translateY(20px);
+        }
+    
+        .card:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width:100%;
+            height:100%;
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;
+            background:#E8DFCA;
+        }
+    
+        .card:hover:before{
+            opacity: 1;
+        }
+    
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .card .info{
+            position: relative;
+            z-index: 3;
+            color: black;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.5s all;
+        }
+    
+        .card:hover .info{
+            opacity: 1;
+            transform: translateY(opx);
+        }
+    
+        .card .info p{
+            letter-spacing: 1px;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    
+        .line{
+            display: block;
+            width: 1300px;
+            align-items: center;
+            border: 2px solid #1A4D2E;
+            margin-top: 50px;
+        }
+    
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +205,7 @@
         <p>College life is often associated with late-night study sessions, social activities, and irregular sleep patterns. Unfortunately, these habits can lead to chronic sleep deprivation. With this, we delve into the factors contributing to sleep loss, examine its effects on college students, and propose practical solutions.</p>
         <p>Sleep deprivation among college students has become a widespread problem, with multiple reasons contributing to its prevalence. Students frequently sacrifice sleep in order to fulfill their duties due to the high academic workload, which is combined with extracurricular commitments and social activities. Furthermore, the college environment, with its crowded dormitories, noisy surrounds, and plenty of stimulating electronic devices, might disrupt students' sleep patterns.</p><br>
     </section>
-
+    
     <section class="causes-sleep-deprv">
         <h2>Causes of Sleep Deprivation</h2>
         <h3>Academic Pressure</h3>
@@ -41,7 +226,7 @@
             <li><span class="bold-title">Personal Stressors: </span>Relationship issues, financial concerns, and family problems impact sleep.</li>
         </ul><br>
     </section>
-    
+    <hr class="line">
     <section class="consequences">
         <h2>Consequences of Sleep Deprivation</h2>
         <h3>Academic Performance</h3>
@@ -62,7 +247,7 @@
             <li><span class="bold-title">Emotional Instability: </span>Irritability, mood swings, and emotional exhaustion are common.</li>
         </ul><br>
     </section>
-
+    <hr class="line">
     <section class="prevention-strategies">
         <h2>Prevention Strategies</h2>
         <h3>Sleep Hygiene</h3>
@@ -84,6 +269,7 @@
         </ul><br>
     </section>
 
+    <hr class="line">
     <section class="conclusion">
         <h2>Conclusion</h2>
         <p>Sleep deprivation among college students is a multifaceted issue with significant consequences. By understanding the causes and implementing preventive measures, we can promote better sleep habits and enhance overall well-being. However, by identifying the underlying causes of sleep loss and applying preventive interventions, we can encourage improved sleep habits and improve college students' quality of life. </p>

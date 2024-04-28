@@ -4,57 +4,177 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.introduction{
+  text-align: center;
+  font-size: xx-large;
+  background-color: #E8DFCA;
+}
+
 p{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
+    text-align: center;
 }
 
 h3{
   font-family: "Cabin", sans-serif;
   font-weight: 400;
-    font-style: normal;
+  font-style: normal;
+  color: #1A4D2E 0.3;
+  
 }
+
 h1{
     font-family: "Cabin", serif;
     font-weight: 400;
     font-style: normal;
+    color: #1A4D2E 0.3;
 }
 
 h2{
-      font-family: "Cabin", serif;
+  font-family: "Cabin", serif;
   font-weight: 400;
   font-style: normal;
+  color: #1A4D2E;
+  text-align: center;
 }
 
-header{
-  background-color: #1A4D2E;
-}
-
-.introduction{
+body {
+  font-family: Arial, sans-serif;
   background-color: #F5EFE6;
+  color: #1A4D2E;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #382315;
+  padding: 20px;
+  text-align: right;
+
+}
+
+nav a {
+  color: #E8DFCA;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
 }
 
 .acad-stress{
-  background-color: #4F6F52;
+  background-color: #AB8E73;
   
 }
 
 .time-management{
-  background-color: #F5EFE6;
+  background-color: #E0D6D1;
 }
 
 .financial-struggle{
-  background-color: #4F6F52;
+  background-color: #AB8E73;
 }
 
 .peer-pressure{
-  background-color: #F5EFE6;
+  background-color: #E0D6D1;
 }
 
 .sleep-deprivation{
-  background-color: #4F6F52;
+  background-color: #AB8E73;
 }
 
 footer{
-  background-color: #1A4D2E;
+  background:#F5EFE6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-container{
+  width: 1140px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content{
+  width: 35%;
+}
+h4{
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list{
+  padding: 0;
+}
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+.list li::before{
+  content: "";
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #AB8E73;
+  transition-duration: .5s;
+}
+.list li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #AB8E73;
+}
+.social-icons i{
+  color: #AB8E73;
+  font-size: 25px;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  color: #AB8E73;
+}
+.social-icons i:hover{
+  color: #AB8E73;
+}
+
+.bottom-bar{
+  background-color: #382315;
+  padding: 1rem; 
+  color: #E8DFCA;
+  position: relative; 
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
 }

@@ -5,87 +5,313 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="All about the teams">
         <title>About Us</title>
-    </head>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8DFCA;
+            color: #1A4D2E;
+            margin: 0;
+            padding: 0;
+    
+        }
+    
+        .headliner {
+            background-color: #F5EFE6;
+          }
+
+        header {
+            background-color: #382315;
+            padding: 20px;
+            text-align: right;
+    
+        }
+    
+        nav a {
+            color: #E8DFCA;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    
+        nav a:hover {
+            text-decoration: underline;
+        }
+    
+        section {
+            padding: 20px;
+        }
+
+        footer{
+            background: #F5EFE6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+          }
+          
+          .footer-container{
+            width: 1140px;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+          }
+          
+          .footer-content{
+            width: 35%;
+          }
+          h4{
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+          .footer-content p{
+            width: 190px;
+            margin: auto;
+            padding: 7px;
+          }
+          .footer-content ul{
+            text-align: center;
+          }
+          .list{
+            padding: 0;
+          }
+          .list li{
+            width: auto;
+            text-align: center;
+            list-style-type: none;
+            padding: 7px;
+            position: relative;
+          }
+          .list li::before{
+            content: "";
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: #AB8E73;
+            transition-duration: .5s;
+          }
+          .list li:hover::before{
+            width: 70px;
+          }
+          .social-icons{
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+          }
+          .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #AB8E73;
+          }
+          .social-icons i{
+            color: #AB8E73;
+            font-size: 25px;
+          }
+          a{
+            text-decoration:none;
+          }
+          a:hover{
+            color: #AB8E73;
+          }
+          .social-icons i:hover{
+            color: #AB8E73;
+          }
+          
+          .bottom-bar{
+            background-color: #382315;
+            padding: 1rem; 
+            color: #E8DFCA;
+            position: relative; 
+            bottom: 0px;
+            left: 0px;
+            padding-top: 20px;
+            width: 100%;
+            text-align: center;
+          }
+          
+
+        .line{
+            display: block;
+            width: 1300px;
+            align-items: center;
+            border: 2px solid #1A4D2E;
+            margin-top: 50px;
+        }
+
+        h1, h2, h3 {
+            color: #1A4D2E;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .wrapper{
+            display: flex;
+            flex: 1;
+            width: 100%;
+            justify-content: space-around;
+        }
+    
+        .card{
+            width: 280px;
+            height: 360px;
+            padding: 2rem 1rem;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+            border-radius: 25px;
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+
+        }
+    
+        .card:hover:before{
+            opacity: 1;
+        }
+    
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .card .info{
+            position: relative;
+            z-index: 3;
+            color: black;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.5s all;
+        }
+    
+        .card:hover .info{
+            opacity: 1;
+            transform: translateY(opx);
+        }
+    
+        .card .info p{
+            letter-spacing: 1px;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+
+            </style>
+        </head>
     <body>
+        
         <header>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
             </nav>
-        </header><br>
+        </header>
 
-        <div class="container">
+        <section class="team">
+            <h2>The Team</h2>
+
+            <div class="wrapper">
+                <div class="card">
+                    <img src="images/member1.jpg" alt="Daryl" width="150" height="150">
+                    <div class="member">
+                        <h3>Daryl Mendina</h3>
+                        <p>Leader</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/member2.jpg" alt="Junmar" width="150" height="150">
+                    <div class="member">
+                        <h3>Junmar Perez</h3>
+                        <p>Member</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/member3.jpg" alt="Ken Anne" width="150" height="150">
+                    <div class="member">
+                        <h3>Ken Anne Acosta</h3>
+                        <p>Member</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/member4.jpg" alt="Precious" width="150" height="150">
+                    <div class="member">
+                        <h3>Precious Gwynth Mallo</h3>
+                        <p>Member</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="headliner">
             <h1>About Us</h1>
-
             <div class="headliner">
                 <h2>"Empowering Minds, Conquering Fatigue: Our Mission to Boost Mental Resilience in College Students"</h2>
                 <p>is a website dedicated to addressing the challenges of mental fatigue among college students. The platform aims to enlighten users about the causes of mental exhaustion, offering valuable insights into prevention strategies and effective solutions. By providing comprehensive information, the website endeavors to empower students to enhance their mental resilience, fostering a healthier and more sustainable approach to academic and personal challenges.</p>
             </div>
+        </section>
 
-          <table>
-            <tr>
-                <div class="member">
-                    <th><img src="images/member1.jpg" alt="Daryl" width="150" height="150"></th>
-                    <th><img src="images/member2.jpg" alt="Junmar" width="150" height="150"></th>
-                    <th><img src="images/member3.jpg" alt="Ken Anne" width="150" height="150"></th>
-                    <th><img src="images/member4.png" alt="Precious" width="150" height="150"></th>
-                </div>
-            </tr>
-            <tr>
-                <div class="team">
-                    <h2>THE TEAM</h2>
-                </div>
-                <td>
-                    <ul>
-                        <li>
-                            <h3>Daryl Mendina</h3>
-                            <p>Leader</p>
-                        </li>
-                    </ul>
-                    
-                </td>  
-                <td>
-                    <ul>
-                        <li>
-                            <h3>Junmar Perez</h3>
-                            <p>Member</p>
-                        </li>
-                    </ul>   
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3>Ken Anne Acosta</h3>
-                            <p>Member</p>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3>Precious Gwynth Mallo</h3>
-                            <p>Member</p>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+            
 
-        <hr>
-            <br>
-                <div class="aboutus">
+                <div class="wrapper">
                     <h2>Documentation</h2>
                     <img src="images/docu.png" alt="grouppic" width="800" height="800">
                 </div>
-            <br>
-        </hr>
-    </div>
+            
 
-    <footer>
-        <div class="bottom-bar">
-          <p>&copy; 2024 All rights reserved.</p>
-       </div>
-    </footer>
-
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:webprojectx@gmail.com"> webprojectx@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+639510168809">+63 9510168809</a> </p>
+                    <p>Address: Legazpi, Albay</p>
+                    <p>Region: Region V, Philippines</p>
+                </div>
+    
+                <div class="footer-content">
+                    <h4>Browser</h4>
+                    <ul class="list">
+                        <a href="about.html"><li>About</a></li>
+                        <a href="acads.html"><li>Academic-Stress</a></li>
+                        <a href="time.html"><li>Time-Management</a></li>
+                        <a href="finance.html"><li>Financial-struggle</a></li>
+                        <a href="peer.html"><li>Peer-pressure</a></li>
+                        <a href="sleep.html"><li>Sleep-deprivation</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-content">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="bottom-bar">
+                <p>&copy; 2024 All rights reserved.</p>
+            </div>
+        </footer>
 </body>
 </html>
